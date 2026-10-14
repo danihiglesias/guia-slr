@@ -14,7 +14,7 @@ The source files are in a public GitHub repository:
 
 ## About the author
 
-**Daniel H. de la Iglesias**
+**Daniel H. de la Iglesia**
 University of Salamanca
 
 - Email: danihiglesias@usal.es
