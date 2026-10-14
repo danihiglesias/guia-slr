@@ -1,0 +1,32 @@
+format: jb-book
+root: es/intro
+parts:
+  - caption: Fundamentos
+    chapters:
+    - file: es/01_fundamentos/que_es_una_slr
+    - file: es/01_fundamentos/tipos_de_revision
+    - file: es/01_fundamentos/estandares_y_guias
+  - caption: Fases de la revisión
+    chapters:
+    - file: es/02_fases/planificacion
+    - file: es/02_fases/busqueda
+    - file: es/02_fases/seleccion_y_calidad
+    - file: es/02_fases/extraccion_y_sintesis
+    - file: es/02_fases/redaccion_y_publicacion
+  - caption: Herramientas e IA
+    chapters:
+    - file: es/03_herramientas/herramientas
+    - file: es/03_herramientas/ia_generativa
+  - caption: Práctica
+    chapters:
+    - file: es/04_practica/caso_practico
+    - file: es/04_practica/plantillas
+  - caption: Referencias
+    chapters:
+    - file: es/05_referencias/referencias
+  - caption: Información
+    chapters:
+    - file: es/90_acerca_de
+    - file: es/91_licencias
+    - file: es/92_como_citar
+    - file: es/93_bibliografia
