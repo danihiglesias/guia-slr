@@ -1,5 +1,6 @@
 PDF_FILENAMES = {
     "es": "GuiaRevisionSistematicaLiteratura.pdf",
+    "en": "GuideSystematicLiteratureReview.pdf",
 }
 
 DEFAULT_PDF_FILENAME = PDF_FILENAMES["es"]

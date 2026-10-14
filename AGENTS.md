@@ -6,10 +6,11 @@ Libro electrónico **Guía para elaborar una revisión sistemática de la litera
 
 **Particularidades de este libro respecto a la plantilla original:**
 
-- Solo hay un idioma configurado: **español** (`book/_config_es.yml`, `book/_toc_es.yml`, `book/es/`). No existe `book/en/`. Las reglas multi-idioma de más abajo solo aplican si en el futuro se añade otro idioma.
+- Hay dos idiomas configurados: **español** (idioma principal: `book/_config_es.yml`, `book/_toc_es.yml`, `book/es/`) e **inglés** (`book/_config_en.yml`, `book/_toc_en.yml`, `book/en/`). Las reglas multi-idioma de más abajo son obligatorias: todo cambio de contenido en español debe reflejarse en inglés.
+- En `book/en/` los nombres de carpetas y archivos están traducidos (`01_fundamentals/`, `02_phases/`, `03_tools/`, `04_practice/`, `05_references/`); la correspondencia con `book/es/` es por posición en el TOC.
 - No hay carpeta `slides/`: el libro no lleva diapositivas Slidev y el workflow de deploy no las compila.
 - El contenido vive en `book/es/01_fundamentos/`, `02_fases/`, `03_herramientas/`, `04_practica/` y `05_referencias/`.
-- El PDF se llama `GuiaRevisionSistematicaLiteratura.pdf` (ver `scripts/pdf_names.py`).
+- Los PDF se llaman `GuiaRevisionSistematicaLiteratura.pdf` (es) y `GuideSystematicLiteratureReview.pdf` (en) (ver `scripts/pdf_names.py`).
 
 Tu trabajo es que TODO funcione con fricción CERO.
 

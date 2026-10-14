@@ -1,0 +1,32 @@
+format: jb-book
+root: en/intro
+parts:
+  - caption: Fundamentals
+    chapters:
+    - file: en/01_fundamentals/what_is_an_slr
+    - file: en/01_fundamentals/review_types
+    - file: en/01_fundamentals/standards_and_guidelines
+  - caption: Review phases
+    chapters:
+    - file: en/02_phases/planning
+    - file: en/02_phases/search
+    - file: en/02_phases/selection_and_quality
+    - file: en/02_phases/extraction_and_synthesis
+    - file: en/02_phases/writing_and_publication
+  - caption: Tools and AI
+    chapters:
+    - file: en/03_tools/tools
+    - file: en/03_tools/generative_ai
+  - caption: Practice
+    chapters:
+    - file: en/04_practice/case_study
+    - file: en/04_practice/templates
+  - caption: References
+    chapters:
+    - file: en/05_references/references
+  - caption: Information
+    chapters:
+    - file: en/90_about
+    - file: en/91_licenses
+    - file: en/92_how_to_cite
+    - file: en/93_bibliography
