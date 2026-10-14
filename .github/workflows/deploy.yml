@@ -9,6 +9,10 @@ on:
     types:
       - deploy-book
 
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
 env:
   # Opt in early to GitHub's Node 24 runtime for JavaScript actions.
   # This avoids Node 20 deprecation warnings on official actions.
@@ -132,6 +136,7 @@ jobs:
           python - <<'PY'
           import json
           import os
+          import re
           import sys
           import time
           import urllib.error
@@ -180,18 +185,45 @@ jobs:
                   "User-Agent": "teachbook-pages-deploy",
               },
           )
-          with urllib.request.urlopen(oidc_request, timeout=60) as response:
-              oidc_token = json.loads(response.read().decode("utf-8"))["value"]
+          def get_oidc_token():
+              with urllib.request.urlopen(oidc_request, timeout=60) as response:
+                  return json.loads(response.read().decode("utf-8"))["value"]
 
-          deployment = request_json(
-              "POST",
-              f"{api_url}/repos/{repo}/pages/deployments",
-              {
-                  "artifact_id": artifact_id,
-                  "pages_build_version": build_version,
-                  "oidc_token": oidc_token,
-              },
-          )
+          def create_deployment():
+              return request_json(
+                  "POST",
+                  f"{api_url}/repos/{repo}/pages/deployments",
+                  {
+                      "artifact_id": artifact_id,
+                      "pages_build_version": build_version,
+                      "oidc_token": get_oidc_token(),
+                  },
+              )
+
+          # A previous deployment can stay stuck as "in progress" on GitHub's
+          # side and block every new one. Cancel it and retry.
+          deployment = None
+          for attempt in range(1, 4):
+              try:
+                  deployment = create_deployment()
+                  break
+              except RuntimeError as error:
+                  match = re.search(
+                      r"due to in progress deployment\. Please cancel ([0-9a-f]{40})",
+                      str(error),
+                  )
+                  if not match or attempt == 3:
+                      raise
+                  stuck = match.group(1)
+                  print(f"Cancelling stuck Pages deployment {stuck} and retrying...")
+                  try:
+                      request_json(
+                          "POST",
+                          f"{api_url}/repos/{repo}/pages/deployments/{stuck}/cancel",
+                      )
+                  except RuntimeError as cancel_error:
+                      print(f"Cancel request failed: {cancel_error}")
+                  time.sleep(10)
           deployment_id = deployment.get("id") or build_version
           status_url = deployment.get(
               "status_url",
