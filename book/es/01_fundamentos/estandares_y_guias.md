@@ -26,7 +26,7 @@ Qué cambió respecto a 2009 y conviene tener presente:
 - Se añaden ítems sobre certeza de la evidencia, conflictos de interés y disponibilidad de datos, código y materiales.
 - El diagrama de flujo tiene dos brazos: bases de datos y registros, y "otros métodos" (búsqueda por citas, webs, organizaciones), que se añade solo si se usaron. Hay [cuatro plantillas oficiales](https://www.prisma-statement.org/prisma-2020-flow-diagram) y una [aplicación web gratuita](https://estech.shinyapps.io/prisma_flowdiagram/) (Haddaway et al., 2022) que genera el diagrama en PDF, PNG o SVG.
 
-Existe una [traducción oficial al español de la declaración](https://www.prisma-statement.org/s/PRISMA-2020-Spanish.pdf) (Rev Esp Cardiol 2021;74(9):790–799), aunque no del checklist.
+Existe una [traducción oficial al español de la declaración](https://www.prisma-statement.org/s/PRISMA-2020-Spanish.pdf) (Rev Esp Cardiol 2021;74(9):790–799), y la web de PRISMA enlaza también el [checklist y el diagrama en español](https://www.prisma-statement.org/translations).
 
 ## Extensiones de PRISMA útiles en informática
 

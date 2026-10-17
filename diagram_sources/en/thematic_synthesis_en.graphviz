@@ -1,0 +1,14 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="S01, p. 2: reports time and errors\nS02, p. 2: reports time\nFictional passages"];
+B [label="Codes\nTime; errors; force"];
+C [label="Interpretive themes\nTemporal efficiency; execution safety"];
+D [label="Bounded conclusion\nDifferent dimensions are recorded;\nclinical superiority is not established"];
+E [label="Check all studies\nS02: missing data not reported\nS04: measurement validity not reported"];
+A -> B;
+B -> C;
+C -> D;
+E -> D [label="Qualify interpretation", style=dashed];
+}

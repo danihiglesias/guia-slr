@@ -1,0 +1,11 @@
+{
+  "generated_by": "scripts/render_diagrams.py",
+  "items": [
+    {
+      "source": "diagram_sources\\en\\human_ai.mermaid",
+      "output": "book\\_static\\generated\\diagrams\\en\\human_ai.svg",
+      "type": "mermaid",
+      "format": "svg"
+    }
+  ]
+}

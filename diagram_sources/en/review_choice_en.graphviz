@@ -1,0 +1,22 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="What is the objective?", shape=diamond];
+B [label="Systematic mapping"];
+C [label="Scoping review"];
+D [label="Systematic review"];
+E [label="Tertiary review"];
+F [label="Compatible estimates\nand sufficient data?", shape=diamond];
+G [label="May include meta-analysis"];
+H [label="Narrative, thematic\nor other explicit synthesis"];
+I [label="Add practitioner sources:\nmultivocal review where appropriate"];
+A -> B [label="Classify a field"];
+A -> C [label="Clarify concepts and evidence"];
+A -> D [label="Synthesise a focused question"];
+A -> E [label="Synthesise reviews"];
+D -> F;
+F -> G [label="Yes and justified"];
+F -> H [label="No"];
+D -> I [style=dashed];
+}

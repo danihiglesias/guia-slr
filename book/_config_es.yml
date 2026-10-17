@@ -6,7 +6,7 @@ author: Daniel H. de la Iglesia
 copyright: "2026"
 logo: "_static/logo.png"
 language: es
-exclude_patterns: ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints", "_build_*", "temp_build_*", "latex_templates*", "_TRASH*"]
+exclude_patterns: ["_static/downloads/**", "_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints", "_build_*", "temp_build_*", "latex_templates*", "_TRASH*"]
 execute:
   execute_notebooks: off
 parse:
@@ -28,6 +28,8 @@ sphinx:
     - sphinxcontrib.bibtex
     - sphinx_kroki
   config:
+    language: es
+    numfig: true
     html_show_copyright: false
     suppress_warnings:
     - bibtex.duplicate_citation

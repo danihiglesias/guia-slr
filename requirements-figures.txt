@@ -1,0 +1,2 @@
+# Optional: reproduce the original teaching figures with the project .venv.
+matplotlib>=3.9,<4

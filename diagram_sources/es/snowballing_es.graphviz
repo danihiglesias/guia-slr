@@ -1,0 +1,20 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="Semilla S01"];
+B [label="Candidato P07\nAplicar elegibilidad"];
+C [label="Candidato P08\nAplicar elegibilidad"];
+D [label="Nuevos incluidos\nVincular y deduplicar"];
+E [label="Siguiente iteración\nRevisar referencias y citas"];
+F [label="¿Nuevos elegibles?", shape=diamond];
+G [label="Parar según protocolo\nGuardar fecha, herramienta e iteración"];
+A -> B [label="Referencias: atrás"];
+A -> C [label="Citas recibidas: delante"];
+B -> D;
+C -> D;
+D -> E;
+E -> F;
+F -> D [label="Sí"];
+F -> G [label="No"];
+}

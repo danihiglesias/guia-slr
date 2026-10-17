@@ -1,0 +1,16 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="RQ1: Which metrics are used\nto assess performance?"];
+B [label="Eligibility: residents or students;\nsimulator; performance metric"];
+C [label="Extraction: study, population, metric,\nrationale and source page"];
+D [label="Analysis: group metrics by function;\ncompare contexts and limitations"];
+E [label="Figure: population × metric\nArea = number of studies"];
+F [label="Answer: time, errors and force;\nno clinical superiority inferred"];
+A -> B;
+B -> C;
+C -> D;
+D -> E;
+E -> F;
+}

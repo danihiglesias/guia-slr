@@ -1,6 +1,6 @@
 # Phase 3. Writing and publication
 
-An SLR paper has a fixed structure and reviewers look for it: if the flow diagram, the search strings or the limitations are missing, rejection is almost certain. Write with the checklist (PRISMA 2020 or SEGRESS) at hand and complete it before submitting; many journals request it as supplementary material.
+An SLR paper has a fixed structure and reviewers look for it: the flow diagram, search strategies and limitations allow readers to assess transparency and rigour. Write with the checklist (PRISMA 2020 or SEGRESS) at hand and complete it before submitting; many journals request it as supplementary material.
 
 ## Recommended structure (Kitchenham et al., 2015; PRISMA 2020)
 
@@ -32,24 +32,12 @@ SEGRESS asks for this section to be called "limitations"; the content is the sam
 
 ## Where to publish
 
-An SLR can be a chapter of a master's thesis or PhD thesis, a journal article, a conference paper or a book chapter. To choose a journal, look at where recent SLRs on your topic have been published (many journals have their own *surveys* or *reviews* section) and prepare the manuscript following the style of that journal's latest review articles. If the review is very large, publish one part and leave the rest for another paper or for the thesis dissertation.
+Find recent reviews on your topic. Check publishers’ scope, article types, review instructions, length and data and AI policies. Verify APCs, waivers and institutional agreements. Distinguish SJR and JCR, their categories and reference years.
 
-| Venue | Recent indicators | Notes for reviews |
-| --- | --- | --- |
-| [Information and Software Technology](https://www.scimagojr.com/journalsearch.php?q=18732&tip=sid&clean=0) | SJR 2025 1.05; Q1 Software | Reference journal for SLRs and mapping studies in software engineering; aligned with SEGRESS |
-| [Journal of Systems and Software](https://www.scimagojr.com/journalsearch.php?q=19309&tip=sid&clean=0) | SJR 2025 0.95; Q1 Software | Regularly publishes SLRs and mapping studies |
-| [ACM Computing Surveys](https://www.scimagojr.com/journalsearch.php?q=23038&tip=sid&clean=0) | SJR 2025 5.99; Q1; H 260 | Broad, high-impact reviews; long and demanding process |
-| [IEEE Access](https://ieeeaccess.ieee.org/authors/submission-guidelines/) | SJR 2025 0.88; Q1; APC USD 2,160 | Accepts *surveys* with questions, criteria and a search procedure; rejects listings without synthesis; requires AI use to be declared in the acknowledgements |
-| [Computers & Education](https://www.scimagojr.com/journalsearch.php?q=17645&tip=sid&clean=0) | SJR 2025 4.43; Q1 Education | Reviews in educational technology; highly selective |
-| [Educational Research Review](https://www.scimagojr.com/journalsearch.php?q=4700152248&tip=sid&clean=0) | SJR 2025 4.29; Q1 Education | Journal dedicated to reviews |
-| [IEEE Transactions on Learning Technologies](https://www.scimagojr.com/journalsearch.php?q=19700167026&tip=sid&clean=0) | SJR 2025 1.89; Q1 | Educational technology with a technical focus |
-| [British Journal of Educational Technology](https://www.scimagojr.com/journalsearch.php?q=23988&tip=sid&clean=0) | SJR 2025 3.83; Q1 | Educational technology |
-| [Computers in Human Behavior](https://www.scimagojr.com/journalsearch.php?q=19419&tip=sid&clean=0) | SJR 2025 3.07; Q1 HCI | HCI and behaviour |
-| Education in the Knowledge Society (EKS) | University of Salamanca (USAL) journal, open access | Publishes reviews in Spanish and English on education and the knowledge society |
-| Conferences: EASE, ESEM, TEEM, HCI International, SIIE | EASE 2026 in Glasgow, ESEM 2026 in Munich | EASE and ESEM are the venues of the EBSE community; TEEM and SIIE are common in the GRIAL environment |
+Examples of topical fit: [Information and Software Technology](https://www.sciencedirect.com/journal/information-and-software-technology), [Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software) and [ACM Computing Surveys](https://dl.acm.org/journal/csur) for computing; [Computers & Education](https://www.sciencedirect.com/journal/computers-and-education), [Educational Research Review](https://www.sciencedirect.com/journal/educational-research-review) and [EKS](https://revistas.usal.es/tres/index.php/eks) for education. These are not a ranking or acceptance guarantee.
 
-Two warnings about journals that are often recommended for reviews: [Education and Information Technologies](https://link.springer.com/journal/10639) **no longer accepts** review articles (systematic, bibliometric or of any kind), and the [Journal of Information Technology Research](https://www.scimagojr.com/journalsearch.php?q=19700201308&tip=sid&clean=0) has been discontinued in Scopus since 2020. SJR indicators were consulted on Scimago in March 2026; check JCR and quartiles with your library before deciding.
+Confirm whether the venue currently accepts your review type and retain source and checking date. When dividing a review across publications, justify distinct questions, disclose the shared corpus and avoid duplicating findings.
 
 ## What to expect from peer review
 
-The most common comments on an SLR: the search is not reproducible; an obvious source is missing; a single reviewer did the screening; there is no quality assessment; the synthesis is a list; threats to validity are not discussed; the paper is too long. Several of these can be anticipated with the checklist; the last one, by moving tables to the supplementary material. Bear in mind too that not all reviewers know the method well: briefly explain why a mapping study does not assess quality or why there is no meta-analysis.
+The most common comments on an SLR: the search is not reproducible; an obvious source is missing; a single reviewer did the screening; there is no quality assessment; the synthesis is a list; threats to validity are not discussed; the paper is too long. Several of these can be anticipated with the checklist; the last one, by moving tables to the supplementary material. Bear in mind too that not all reviewers know the method well: justify the chosen critical appraisal and whether meta-analysis is appropriate.

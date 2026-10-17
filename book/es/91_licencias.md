@@ -33,3 +33,7 @@ El proyecto hace uso de herramientas y bibliotecas externas, entre ellas:
 - [MyST Markdown](https://mystmd.org/)
 
 Cada herramienta conserva su propia licencia.
+
+## Figuras y datos de esta edición
+
+Figuras docentes originales y datos ficticios: CC BY 4.0. Fuentes: `diagram_sources/es/`, `diagram_sources/en/` y `scripts/generate_teaching_assets.py`. El flujo PRISMA adapta Page et al. (2021), con cifras inventadas y rotulación reorganizada; las [plantillas originales](https://www.prisma-statement.org/prisma-2020-flow-diagram) tienen licencia CC BY 4.0. Cada pie identifica autoría o adaptación. La matriz ilustra juicios, no reproduce una herramienta validada.

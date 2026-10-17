@@ -1,0 +1,4 @@
+﻿field,allowed_values,definition
+population,student;resident,Final-year student or surgical resident; mutually exclusive in this exercise
+metrics,time;errors;force,Multiple categories allowed; absence of a category is not evidence of clinical ineffectiveness
+appraisal,yes;unclear,"Documented criterion or not reported; illustrative domains, not a validated instrument"

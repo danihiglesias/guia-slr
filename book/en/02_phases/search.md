@@ -2,22 +2,34 @@
 
 The search must be replicable: another researcher, with your string, your database and your date, should obtain (almost) the same records. Only 43% of 311 analysed software engineering SLRs publish reusable strings, and fewer than 5% reproduce their results ([Li, 2021](https://arxiv.org/pdf/2103.01381)); do not become part of that statistic.
 
+
+```{figure} ../../_static/generated/diagrams/en/search_design_en.svg
+:name: fig-search_design-en
+:alt: Building and checking a search. Conceptual expressions: adapt syntax, fields and truncation to each platform. Original figure, CC BY 4.0.
+:width: 100%
+:align: center
+
+Building and checking a search. Conceptual expressions: adapt syntax, fields and truncation to each platform. Original figure, CC BY 4.0.
+```
+
+
 ## Where to search
 
-Do not limit yourself to the largest databases; combine at least one multidisciplinary index (Scopus or Web of Science) with the digital libraries of your field, and add *snowballing*. Google Scholar is useful for the preliminary search and for *forward snowballing*, but not as a primary source.
+Choose sources for topical coverage, study types and access, and justify the combination. Consult a search specialist where possible. There is no universal sufficient number of databases. Indexes and platforms overlap; retain provenance before deduplication {cite:p}`rethlefsen2021`.
 
-| Source | Coverage | Export limits and replicability | For whom |
-| --- | --- | --- | --- |
-| [Scopus](https://www.elsevier.support/scopus/answer/what%20content-is%20indexed-in-scopus) | More than 83 M records since 1823; 25,000 active journals; 10.5 M conference papers | Up to 20,000 records in CSV (citations only) or 2,000 in RIS; stable syntax (TITLE-ABS-KEY) | Everyone; the best first choice in computer science and education |
-| [Web of Science](https://library-guides.ucl.ac.uk/web-of-science/exporting) | Core of JCR journals; fewer proceedings than Scopus | 1,000 records per export (ranges); minimum truncation of 3 characters; TS= field | Everyone; necessary if the venue values JCR |
-| [IEEE Xplore](https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/search-results-page) | IEEE journals and conferences | Maximum of 6 wildcards; export limited to about 2,000 records in CSV; some patterns return errors | Computer science, engineering, educational technology (TLT, FIE, EDUCON) |
-| [ACM Digital Library](https://libraries.acm.org/training-resources/search-tools) | ACM full text plus the *Guide to Computing Literature* | No proximity operators; no official bulk export; it is advisable to restrict to "ACM Full-Text" to avoid duplicates | Computer science, HCI, computing education (SIGCSE, ITiCSE) |
-| [SpringerLink](https://support.springernature.com/en/support/solutions/articles/6000134488-download-export-a-list-of-search-results-in-springerlink) | Journals, books and LNCS | CSV of up to 1,000 results with an account; field search in title only | Computer science (LNCS), education |
-| ScienceDirect | Elsevier journals (IST, JSS, C&E) | Maximum of 8 Boolean operators per field and 500 characters; no wildcards | If Scopus is not enough for full text |
-| [ERIC](https://eric.ed.gov/?faq) | About 1.5 M education records since 1966 | API and download; its own thesaurus | Education and educational technology |
-| [Google Scholar](https://aarontay.substack.com/p/why-exactly-is-google-scholar-bad-for) | Everything, including grey literature | Maximum of 1,000 results, 256-character queries, no API or bulk export, opaque ranking and non-reproducible results | Only for preliminary searches, *snowballing* and grey literature; Gusenbauer & Haddaway (2020) consider it unsuitable as a primary source |
-| [dblp](https://dagstuhl.de/dblp) | More than 6.5 M computer science publications; CC0 data with API | Metadata only, no abstracts | Verifying venues and authors in computer science |
-| [OpenAlex](https://help.openalex.org/data/works/) / [Semantic Scholar](https://www.semanticscholar.org/about) / [Lens.org](https://researchguides.library.syr.edu/lensguide/use) | Open indexes of 200 to 320 M records with a free API | OpenAlex: around 40% without an abstract and 64% without references; Lens exports 50,000 records with a free account | Open, API-reproducible complement; useful for automated *snowballing* |
+| Source | Coverage and use |
+| --- | --- |
+| [Scopus](https://www.elsevier.com/products/scopus) | Multidisciplinary index; journals and conferences |
+| [Web of Science](https://webofscience.zendesk.com/) | Report the collections searched |
+| [IEEE Xplore](https://ieeexplore.ieee.org/Xplorehelp/) | Engineering and computing |
+| [ACM Digital Library](https://libraries.acm.org/training-resources/search-tools) | Distinguish full-text collection and bibliographic index |
+| [SpringerLink / ScienceDirect](https://link.springer.com/) | Publisher platforms; justify additional coverage |
+| [ERIC](https://eric.ed.gov/?faq) | Education; free text and thesaurus |
+| [Google Scholar](https://scholar.google.com/intl/en/scholar/help.html) | Complement; report limits and ranking |
+| [dblp](https://dblp.org/faq/) | Computing metadata; no abstracts |
+| [OpenAlex / Semantic Scholar](https://docs.openalex.org/) | Check coverage, fields and API conditions |
+
+Export limits, fields and syntax change. Check official documentation when searching and log date, format, batches and exported total. Full-text retrieval differs from identifying records.
 
 ## Building the search string
 
@@ -69,4 +81,19 @@ For each source: name and platform (Scopus via Elsevier), the full string exactl
 - Not keeping the original export (RIS/BibTeX) from each database.
 - Forgetting conference proceedings in fields where they are the main venue (software engineering, HCI).
 - Limiting by date or language without justifying it in the protocol.
+```
+
+## Validation and execution log
+
+Not every PICOC component needs an AND block. Adding outcomes or metrics poorly described in abstracts can lose relevant studies. Compare variants, inspect what each block adds or removes and retain the history. The figure uses two conceptual blocks; it is not a ready-to-run query for every platform.
+
+For each database, the control denominator is the number of known papers indexed there and meeting its limits. Retrieving all of them does not establish completeness. Log why each missing paper was missed and avoid tuning only to their wording. Publish the full query without “…”: the shortened Hou query is illustrative, not reproducible.
+
+```{figure} ../../_static/generated/diagrams/en/snowballing_en.svg
+:name: fig-snowballing-en
+:alt: Citation searching and iterations. Arrows are discovery steps, not citation direction. Conceptual example independent of the dataset. Original figure, CC BY 4.0.
+:width: 100%
+:align: center
+
+Citation searching and iterations. Arrows are discovery steps, not citation direction. Conceptual example independent of the dataset. Original figure, CC BY 4.0.
 ```

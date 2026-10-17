@@ -1,0 +1,19 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="Protocolo: tarea, modelo, prompt\ny validación independiente"];
+B [label="IA: ordenar registros\no proponer decisión con evidencia"];
+C [label="Persona: verificar propuesta\ny consultar documento original"];
+D [label="¿Duda o desacuerdo?", shape=diamond];
+E [label="Segunda persona o árbitro\nResolver con criterios explícitos"];
+F [label="Decisión humana final\nGuardar evidencia y trazabilidad"];
+G [label="Auditar omisiones y errores\nRevalidar cambios y declarar uso"];
+A -> B;
+B -> C;
+C -> D;
+D -> E [label="Sí"];
+D -> F [label="No"];
+E -> F;
+F -> G;
+}

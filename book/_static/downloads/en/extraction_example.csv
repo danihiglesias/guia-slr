@@ -1,0 +1,7 @@
+﻿study_id,report_id,population,participants,metrics,source_page,reviewer,extraction_date,measurement_validity,missing_data,context,data_status
+S01,P01,Resident,24,Time;Errors,2,A,2026-10-16,Yes,Yes,Yes,FICTITIOUS
+S02,P02,Resident,18,Time,2,A,2026-10-16,Yes,Not reported,Yes,FICTITIOUS
+S03,P03,Student,30,Errors;Force,2,A,2026-10-16,Yes,Yes,Yes,FICTITIOUS
+S04,P04,Student,16,Time;Force,2,A,2026-10-16,Not reported,Yes,Yes,FICTITIOUS
+S05,P05,Resident,22,Errors,2,A,2026-10-16,Yes,Yes,Not reported,FICTITIOUS
+S06,P06,Student,20,Time;Errors;Force,2,A,2026-10-16,Yes,Yes,Yes,FICTITIOUS

@@ -26,7 +26,7 @@ What changed with respect to 2009 and is worth bearing in mind:
 - Items are added on certainty of evidence, conflicts of interest and availability of data, code and materials.
 - The flow diagram has two arms: databases and registers, and "other methods" (citation searching, websites, organisations), which is added only if they were used. There are [four official templates](https://www.prisma-statement.org/prisma-2020-flow-diagram) and a [free web application](https://estech.shinyapps.io/prisma_flowdiagram/) (Haddaway et al., 2022) that generates the diagram in PDF, PNG or SVG.
 
-There is an [official Spanish translation of the statement](https://www.prisma-statement.org/s/PRISMA-2020-Spanish.pdf) (Rev Esp Cardiol 2021;74(9):790–799), although not of the checklist.
+There is an [official Spanish translation of the statement](https://www.prisma-statement.org/s/PRISMA-2020-Spanish.pdf) (Rev Esp Cardiol 2021;74(9):790–799), and the PRISMA website also links the [Spanish checklist and flow diagram](https://www.prisma-statement.org/translations).
 
 ## PRISMA extensions useful in computer science
 

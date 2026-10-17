@@ -1,6 +1,6 @@
 # Review types and which one to choose
 
-The choice depends on two questions: do you know the area in depth? And is the evidence comparable? If you do not know the area, conduct a systematic mapping study. If you know it and the studies measure comparable variables, a meta-analysis. If you know it but the evidence is heterogeneous, a systematic review.
+Choose the design according to the objective: classify a field (mapping), clarify concepts and evidence types (scoping), or answer a focused question through critical synthesis (SLR). Meta-analysis is a synthesis technique that may form part of an SLR when studies are sufficiently compatible. The team’s prior knowledge affects preparation, but does not determine the design.
 
 | Type | Typical question | What it produces | Quality appraisal | Reference guideline |
 | --- | --- | --- | --- | --- |
@@ -12,12 +12,23 @@ The choice depends on two questions: do you know the area in depth? And is the e
 | Tertiary study / umbrella review | What do already published systematic reviews say? | Synthesis of reviews (the unit is the SLR) | Yes, with AMSTAR 2 or ROBIS | Kitchenham et al. (2009, 2010) |
 | Rapid review | Same as an SLR, with fewer resources and a short deadline | Simplified synthesis; document the shortcuts | Simplified | Cochrane Rapid Reviews Methods Group |
 
+
+```{figure} ../../_static/generated/diagrams/en/review_choice_en.svg
+:name: fig-review_choice-en
+:alt: Choose by objective. Designs can be combined with justification; meta-analysis is a synthesis technique. Original figure, CC BY 4.0.
+:width: 100%
+:align: center
+
+Choose by objective. Designs can be combined with justification; meta-analysis is a synthesis technique. Original figure, CC BY 4.0.
+```
+
+
 ## SLR versus systematic mapping study
 
 The difference can be summarised as follows: a systematic review details the state of the art and seeks results that answer open questions; a mapping study gives a broad overview and identifies the volume of evidence, the types of research and the available results. In practice the term "systematic review" is used interchangeably for both, and both can be published in a journal and serve as a chapter of a thesis or master's dissertation.
 
-The combination works better than either one on its own: an initial mapping study tells you where the bulk of the literature lies, and a subsequent SLR delves into the subset that answers your question. Mapping questions are of the kind "how many studies were published per year?", "who are the most active authors?", "in which domains has it been applied?" or, in a review on LLMs in software engineering, "which models are used and for which tasks?" (Hou et al., 2024); SLR questions are of the kind "what solutions have been used for X?" and "how do they address X?".
+Combining the designs can be useful when this matches the objectives and available resources: an initial mapping study tells you where the bulk of the literature lies, and a subsequent SLR delves into the subset that answers your question. Mapping questions are of the kind "how many studies were published per year?", "who are the most active authors?", "in which domains has it been applied?" or, in a review on LLMs in software engineering, "which models are used and for which tasks?" (Hou et al., 2024); SLR questions are of the kind "what solutions have been used for X?" and "how do they address X?".
 
 ## Systematic review versus meta-analysis
 
-An SLR answers a question by collecting and summarising all the empirical evidence with an explicit method; a meta-analysis is the use of statistical methods to combine the results of similar studies and obtain more precise estimates. Every quantitative SLR is a prerequisite for a meta-analysis, but not every SLR contains one (Kitchenham & Charters, 2007; Mujica-Sequera, 2022). In engineering and computer science, meta-analysis is uncommon because primary studies rarely measure the same variables with comparable designs; when you do one, avoid *vote counting* (counting how many studies come out positive), a practice that the [ACM SIGSOFT Empirical Standards](https://github.com/acmsigsoft/EmpiricalStandards/blob/master/docs/standards/SystematicReviews.md) explicitly discourage.
+An SLR answers a question by collecting and summarising all the empirical evidence with an explicit method; a meta-analysis is the use of statistical methods to combine the results of similar studies and obtain more precise estimates. Meta-analysis may form part of an SLR, but not every SLR contains one (Kitchenham & Charters, 2007; Mujica-Sequera, 2022). In engineering and computer science, meta-analysis is uncommon because primary studies rarely measure the same variables with comparable designs; when you do one, avoid *vote counting* (counting how many studies come out positive), a practice that the [ACM SIGSOFT Empirical Standards](https://github.com/acmsigsoft/EmpiricalStandards/blob/master/docs/standards/SystematicReviews.md) explicitly discourage.

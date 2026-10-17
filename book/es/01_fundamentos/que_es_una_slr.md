@@ -13,7 +13,7 @@ Su objetivo es decir qué se sabe de un tema, qué se ha investigado y qué sigu
 
 ## Origen y comunidades
 
-Las SLR nacieron en Medicina. La Colaboración Cochrane, fundada en 1993, publica sus revisiones en la *Cochrane Database of Systematic Reviews*, que en 2025 tiene un factor de impacto de 11,1 y reúne a más de 154.000 miembros y colaboradores en unos 210 países ([Cochrane](https://cochranelibrary.com/cdsr/about-cdsr/impact), [membership dashboard](https://resources.cochrane.org/reports-and-data/membership-dashboard)). La Campbell Collaboration es su hermana en Ciencias Sociales (Petticrew & Roberts, 2005).
+Las SLR nacieron en Medicina. La Colaboración Cochrane, fundada en 1993, publica revisiones en la *Cochrane Database of Systematic Reviews*. La Campbell Collaboration es su hermana en Ciencias Sociales (Petticrew & Roberts, 2005).
 
 En Ingeniería del Software la comunidad de *Evidence-Based Software Engineering* (EBSE) adaptó el método a partir de 2004, con las guías de Kitchenham (2004) y Kitchenham & Charters (2007), que siguen siendo la referencia que se cita en la mayoría de SLR de informática. Desde entonces el campo ha añadido guías propias para mapeos (Petersen et al., 2008, 2015), *snowballing* (Wohlin, 2014), literatura gris (Garousi et al., 2019) y reporte (SEGRESS, 2023). La sección de estándares las recorre una a una.
 
@@ -32,7 +32,9 @@ Adaptado de Martín Rodero (2014).
 
 ## ¿Sistemática o sistematizada?
 
-El protocolo fijado en Ciencias de la Salud usa métodos estadísticos sobre estudios cuantitativos (*systematic review*). Cuando se traslada a campos que no usan análisis estadístico, Grant & Booth (2009) y Codina (2015) proponen hablar de revisión *sistematizada* (*systematized review*). En la práctica el uso mayoritario, también en informática y educación, sigue siendo *systematic review*; lo importante es que el método cumpla las cuatro dimensiones anteriores, no la etiqueta.
+Una revisión sistemática puede sintetizar estudios cuantitativos, cualitativos o mixtos. **No requiere metaanálisis**: la elección de síntesis depende de la pregunta, los diseños y los datos disponibles. Una síntesis narrativa o temática también puede seguir un método sistemático.
+
+Grant y Booth describen las revisiones sistematizadas como trabajos que incorporan algunos elementos de una revisión sistemática, pero no necesariamente todos. La distinción debe explicarse por los métodos realmente aplicados y sus limitaciones, no por la disciplina ni por la ausencia de estadística {cite:p}`grant2009,cochranehandbook`.
 
 ## Ventajas y coste
 

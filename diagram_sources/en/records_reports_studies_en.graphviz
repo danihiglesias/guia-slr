@@ -1,0 +1,18 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+R1 [label="Record R01: Scopus"];
+P1 [label="Report P01: conference paper"];
+R2 [label="Record R02: IEEE Xplore"];
+R3 [label="Record R03: Scopus"];
+P2 [label="Report P02: extended journal paper"];
+S [label="Study S01: same investigation\nComplementary data; count once"];
+N [label="3 records → 2 reports → 1 study\nR01 and R02 duplicate the same report"];
+R1 -> P1;
+R2 -> P1;
+R3 -> P2;
+P1 -> S;
+P2 -> S;
+N;
+}

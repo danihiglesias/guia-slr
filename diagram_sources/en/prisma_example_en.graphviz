@@ -1,0 +1,32 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="Records: Scopus 24; IEEE Xplore 16\nTotal n = 40"];
+B [label="Records screened\nn = 32"];
+X [label="Duplicates removed\nn = 8"];
+C [label="Reports sought\nn = 10"];
+Y [label="Records excluded\nn = 22"];
+D [label="Reports assessed\nn = 9"];
+Z [label="Reports not retrieved\nn = 1"];
+E [label="Reports included\nn = 5"];
+W [label="Excluded: population 2; no metric 2\nTotal n = 4"];
+O [label="Citation searching: reports\nn = 1"];
+P [label="Sought and assessed: 1\nNot retrieved: 0; excluded: 0"];
+F [label="Included: 6 studies; 6 reports\nFICTIONAL DATA"];
+subgraph cluster_DB { label="Identification via databases"; color="#b7c9d5";
+A -> B;
+A -> X;
+B -> C;
+B -> Y;
+C -> D;
+C -> Z;
+D -> E;
+D -> W;
+}
+subgraph cluster_OT { label="Identification via other methods"; color="#b7c9d5";
+O -> P;
+}
+E -> F;
+P -> F;
+}

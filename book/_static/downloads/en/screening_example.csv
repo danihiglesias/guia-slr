@@ -1,0 +1,42 @@
+﻿record_id,report_id,study_id,source,origin,duplicate_of,title_abstract_A,title_abstract_B,full_text_final,retrieved,reason,data_status
+R01,P01,S01,Scopus,database,,include,include,include,yes,,FICTITIOUS
+R02,P02,S02,Scopus,database,,include,include,include,yes,,FICTITIOUS
+R03,P03,S03,Scopus,database,,include,include,include,yes,,FICTITIOUS
+R04,P04,S04,Scopus,database,,include,include,include,yes,,FICTITIOUS
+R05,P05,S05,Scopus,database,,include,include,include,yes,,FICTITIOUS
+R06,P106,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R07,P107,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R08,P108,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R09,P109,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R10,P110,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R11,P111,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R12,P112,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R13,P113,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R14,P114,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R15,P115,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R16,P116,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R17,P117,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R18,P118,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R19,P119,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R20,P120,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R21,P121,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R22,P122,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R23,P123,,Scopus,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R24,P124,,Scopus,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R25,P125,,IEEE Xplore,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R26,P126,,IEEE Xplore,database,,exclude,exclude,,,EC2_no_metric,FICTITIOUS
+R27,P127,,IEEE Xplore,database,,exclude,exclude,,,EC1_population,FICTITIOUS
+R28,P128,,IEEE Xplore,database,,include,include,,no,not_retrieved,FICTITIOUS
+R29,P129,,IEEE Xplore,database,,include,include,exclude,yes,EC1_population,FICTITIOUS
+R30,P130,,IEEE Xplore,database,,include,include,exclude,yes,EC1_population,FICTITIOUS
+R31,P131,,IEEE Xplore,database,,include,include,exclude,yes,EC2_no_metric,FICTITIOUS
+R32,P132,,IEEE Xplore,database,,include,include,exclude,yes,EC2_no_metric,FICTITIOUS
+R33,P01,,IEEE Xplore,database,R01,,,,,,FICTITIOUS
+R34,P02,,IEEE Xplore,database,R02,,,,,,FICTITIOUS
+R35,P03,,IEEE Xplore,database,R03,,,,,,FICTITIOUS
+R36,P04,,IEEE Xplore,database,R04,,,,,,FICTITIOUS
+R37,P05,,IEEE Xplore,database,R05,,,,,,FICTITIOUS
+R38,P106,,IEEE Xplore,database,R06,,,,,,FICTITIOUS
+R39,P107,,IEEE Xplore,database,R07,,,,,,FICTITIOUS
+R40,P108,,IEEE Xplore,database,R08,,,,,,FICTITIOUS
+R41,P06,S06,snowballing,citation_search,,not_applicable,not_applicable,include,yes,,FICTITIOUS

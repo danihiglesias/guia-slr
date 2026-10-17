@@ -33,3 +33,7 @@ The project makes use of external tools and libraries, including:
 - [MyST Markdown](https://mystmd.org/)
 
 Each tool retains its own license.
+
+## Figures and data in this edition
+
+Original teaching figures and fictional data: CC BY 4.0. Sources: `diagram_sources/es/`, `diagram_sources/en/` and `scripts/generate_teaching_assets.py`. The PRISMA flow adapts Page et al. (2021), with invented counts and reorganised labels; the [original templates](https://www.prisma-statement.org/prisma-2020-flow-diagram) are CC BY 4.0. Captions identify authorship or adaptation. The matrix illustrates judgements rather than reproducing a validated tool.

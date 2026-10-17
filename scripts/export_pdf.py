@@ -1074,7 +1074,7 @@ def sanitize_config(config_path):
             if "exclude_patterns:" in line:
                 # Force a safe, minimal exclusion list
                 new_lines.append(
-                    'exclude_patterns: ["_build", "**.ipynb_checkpoints", ".git", ".github"]\n'
+                    'exclude_patterns: ["_build", "**.ipynb_checkpoints", ".git", ".github", "_static/downloads/**"]\n'
                 )
                 exclude_written = True
                 continue
@@ -1082,7 +1082,7 @@ def sanitize_config(config_path):
 
         if not exclude_written:
             new_lines.append(
-                'exclude_patterns: ["_build", "**.ipynb_checkpoints", ".git", ".github"]\n'
+                'exclude_patterns: ["_build", "**.ipynb_checkpoints", ".git", ".github", "_static/downloads/**"]\n'
             )
 
         with open(config_path, "w", encoding="utf-8") as f:

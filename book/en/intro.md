@@ -2,6 +2,17 @@
 
 This guide explains, step by step, how to plan, conduct and publish a systematic literature review (SLR) or a systematic mapping study in engineering and computer science. It is intended for PhD students and researchers undertaking their first review.
 
+
+```{figure} ../_static/generated/diagrams/en/process_en.svg
+:name: fig-process-en
+:alt: Process and deliverables. Dashed arrows represent documented protocol amendments. Original figure, CC BY 4.0.
+:width: 100%
+:align: center
+
+Process and deliverables. Dashed arrows represent documented protocol amendments. Original figure, CC BY 4.0.
+```
+
+
 ## How to use this guide
 
 If this is your first SLR, read the chapters in order. If you already have a topic and need to get started, go straight to the phases (planning, search, selection, extraction and writing) and use the templates at the end. Each phase closes with the most common mistakes we see among PhD students. The two documents worth always keeping at hand are the process guidelines by {cite:t}`kitchenham2007` and the PRISMA 2020 reporting statement by {cite:t}`page2021prisma`.
@@ -26,12 +37,15 @@ If this is your first SLR, read the chapters in order. If you already have a top
 | Practice | [Guided case study](04_practice/case_study.md) · [Templates and checklists](04_practice/templates.md) |
 | References | [References and resources](05_references/references.md) |
 
+````{only} html
 ## PDF version
 
 You can also download the printable version of the book:
 
 - [Download PDF](../_static/GuideSystematicLiteratureReview.pdf)
 
+````
+
 ```{note}
-The prices, versions and bibliometric indicators that appear in this guide were checked in October 2026 and change frequently; always check the original source before deciding.
+Tools and policies change. Check official sources and record date, version and applicable conditions. Methodological and visual revision: 16 October 2026.
 ```

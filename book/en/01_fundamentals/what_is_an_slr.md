@@ -13,7 +13,7 @@ Its goal is to state what is known about a topic, what has been investigated and
 
 ## Origins and communities
 
-SLRs originated in Medicine. The Cochrane Collaboration, founded in 1993, publishes its reviews in the *Cochrane Database of Systematic Reviews*, which in 2025 has an impact factor of 11.1 and brings together more than 154,000 members and supporters in some 210 countries ([Cochrane](https://cochranelibrary.com/cdsr/about-cdsr/impact), [membership dashboard](https://resources.cochrane.org/reports-and-data/membership-dashboard)). The Campbell Collaboration is its sister organisation in the Social Sciences (Petticrew & Roberts, 2005).
+SLRs originated in Medicine. The Cochrane Collaboration, founded in 1993, publishes reviews in the *Cochrane Database of Systematic Reviews*. The Campbell Collaboration is its sister organisation in the Social Sciences (Petticrew & Roberts, 2005).
 
 In Software Engineering, the *Evidence-Based Software Engineering* (EBSE) community adapted the method from 2004 onwards, with the guidelines by Kitchenham (2004) and Kitchenham & Charters (2007), which remain the reference cited in most computer science SLRs. Since then the field has added its own guidelines for mapping studies (Petersen et al., 2008, 2015), *snowballing* (Wohlin, 2014), grey literature (Garousi et al., 2019) and reporting (SEGRESS, 2023). The standards section goes through them one by one.
 
@@ -32,7 +32,9 @@ Adapted from Martín Rodero (2014).
 
 ## Systematic or systematized?
 
-The protocol established in the Health Sciences uses statistical methods on quantitative studies (*systematic review*). When it is transferred to fields that do not use statistical analysis, Grant & Booth (2009) and Codina (2015) propose speaking of a *systematized* review (*systematized review*). In practice, the prevailing usage, also in computer science and education, remains *systematic review*; what matters is that the method meets the four dimensions above, not the label.
+A systematic review can synthesise quantitative, qualitative or mixed-methods studies. **Meta-analysis is not required**: the synthesis method depends on the question, designs and available data. Narrative and thematic synthesis can also follow systematic methods.
+
+Grant and Booth describe systematized reviews as work incorporating some elements of a systematic review, without necessarily meeting all of them. Explain the distinction through the methods actually used and their limitations, rather than the discipline or the absence of statistics {cite:p}`grant2009,cochranehandbook`.
 
 ## Advantages and cost
 

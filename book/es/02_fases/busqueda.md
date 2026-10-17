@@ -2,22 +2,34 @@
 
 La búsqueda debe ser replicable: otro investigador, con tu cadena, tu base de datos y tu fecha, debería obtener (casi) los mismos registros. Solo el 43 % de 311 SLR de ingeniería del software analizadas publican cadenas reutilizables y menos del 5 % reproducen sus resultados ([Li, 2021](https://arxiv.org/pdf/2103.01381)); no seas parte de esa estadística.
 
+
+```{figure} ../../_static/generated/diagrams/es/search_design_es.svg
+:name: fig-search_design-es
+:alt: Construcción y comprobación de búsqueda. Expresiones conceptuales: adapta sintaxis, campos y truncamiento a cada plataforma. Elaboración propia, CC BY 4.0.
+:width: 100%
+:align: center
+
+Construcción y comprobación de búsqueda. Expresiones conceptuales: adapta sintaxis, campos y truncamiento a cada plataforma. Elaboración propia, CC BY 4.0.
+```
+
+
 ## Dónde buscar
 
-No te limites a las bases más grandes; combina al menos un índice multidisciplinar (Scopus o Web of Science) con las bibliotecas digitales de tu área, y añade *snowballing*. Google Scholar sirve para la búsqueda preliminar y para el *forward snowballing*, pero no como fuente principal.
+Elige fuentes por cobertura temática, tipos de estudio y acceso, y justifica la combinación. Consulta una persona experta en búsquedas si es posible. No existe un número universal de bases suficiente. Índices y plataformas se solapan; conserva la procedencia antes de deduplicar {cite:p}`rethlefsen2021`.
 
-| Fuente | Cobertura | Límites de exportación y replicabilidad | Para quién |
-| --- | --- | --- | --- |
-| [Scopus](https://www.elsevier.support/scopus/answer/what%20content-is%20indexed-in-scopus) | Más de 83 M de registros desde 1823; 25.000 revistas activas; 10,5 M de ponencias | Hasta 20.000 registros en CSV (solo citas) o 2.000 en RIS; sintaxis estable (TITLE-ABS-KEY) | Todos; la mejor primera opción en informática y educación |
-| [Web of Science](https://library-guides.ucl.ac.uk/web-of-science/exporting) | Núcleo de revistas JCR; menos actas que Scopus | 1.000 registros por exportación (rangos); truncamiento mínimo 3 caracteres; campo TS= | Todos; necesario si la sede valora JCR |
-| [IEEE Xplore](https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/search-results-page) | Revistas y congresos IEEE | Máximo 6 comodines; exportación limitada a unos 2.000 registros en CSV; algunos patrones dan error | Informática, ingeniería, tecnología educativa (TLT, FIE, EDUCON) |
-| [ACM Digital Library](https://libraries.acm.org/training-resources/search-tools) | Texto completo ACM más la *Guide to Computing Literature* | Sin operadores de proximidad; sin exportación masiva oficial; conviene restringir a "ACM Full-Text" para evitar duplicados | Informática, HCI, educación en computación (SIGCSE, ITiCSE) |
-| [SpringerLink](https://support.springernature.com/en/support/solutions/articles/6000134488-download-export-a-list-of-search-results-in-springerlink) | Revistas, libros y LNCS | CSV de hasta 1.000 resultados con cuenta; búsqueda por campo solo en título | Informática (LNCS), educación |
-| ScienceDirect | Revistas Elsevier (IST, JSS, C&E) | Máximo 8 operadores booleanos por campo y 500 caracteres; sin comodines | Si Scopus no basta para texto completo |
-| [ERIC](https://eric.ed.gov/?faq) | Unos 1,5 M de registros de educación desde 1966 | API y descarga; tesauro propio | Educación y tecnología educativa |
-| [Google Scholar](https://aarontay.substack.com/p/why-exactly-is-google-scholar-bad-for) | Todo, incluida literatura gris | Máximo 1.000 resultados, consultas de 256 caracteres, sin API ni exportación masiva, ranking opaco y resultados no reproducibles | Solo preliminar, *snowballing* y literatura gris; Gusenbauer & Haddaway (2020) lo consideran inadecuado como fuente principal |
-| [dblp](https://dagstuhl.de/dblp) | Más de 6,5 M de publicaciones de informática; datos CC0 con API | Solo metadatos, sin resúmenes | Verificar sedes y autores en informática |
-| [OpenAlex](https://help.openalex.org/data/works/) / [Semantic Scholar](https://www.semanticscholar.org/about) / [Lens.org](https://researchguides.library.syr.edu/lensguide/use) | Índices abiertos de 200 a 320 M de registros con API gratuita | OpenAlex: en torno al 40 % sin resumen y 64 % sin referencias; Lens exporta 50.000 registros con cuenta gratuita | Complemento abierto y reproducible por API; útil para *snowballing* automatizado |
+| Fuente | Cobertura y uso |
+| --- | --- |
+| [Scopus](https://www.elsevier.com/products/scopus) | Índice multidisciplinar; revistas y congresos |
+| [Web of Science](https://webofscience.zendesk.com/) | Declara las colecciones consultadas |
+| [IEEE Xplore](https://ieeexplore.ieee.org/Xplorehelp/) | Ingeniería e informática |
+| [ACM Digital Library](https://libraries.acm.org/training-resources/search-tools) | Distingue colección a texto completo e índice bibliográfico |
+| [SpringerLink / ScienceDirect](https://link.springer.com/) | Plataformas editoriales; justifica cobertura adicional |
+| [ERIC](https://eric.ed.gov/?faq) | Educación; texto libre y tesauro |
+| [Google Scholar](https://scholar.google.com/intl/en/scholar/help.html) | Complemento; documenta límites y ordenación |
+| [dblp](https://dblp.org/faq/) | Metadatos de informática; sin resúmenes |
+| [OpenAlex / Semantic Scholar](https://docs.openalex.org/) | Comprueba cobertura, campos y condiciones de API |
+
+Los límites de exportación, campos y sintaxis cambian. Consulta la documentación oficial al buscar y anota fecha, formato, lotes y total exportado. Recuperar texto completo es distinto de identificar registros.
 
 ## Construir la cadena de búsqueda
 
@@ -69,4 +81,19 @@ Para cada fuente: nombre y plataforma (Scopus vía Elsevier), cadena completa ta
 - No guardar la exportación original (RIS/BibTeX) de cada base.
 - Olvidar las actas de congresos en áreas donde son la sede principal (ingeniería del software, HCI).
 - Limitar por fecha o idioma sin justificarlo en el protocolo.
+```
+
+## Validación y registro operativo
+
+No todos los componentes de PICOC tienen que convertirse en bloques AND. Añadir resultados o métricas poco descritos en resúmenes puede perder estudios relevantes. Prueba variantes, inspecciona qué añade o elimina cada bloque y conserva el historial. La figura usa dos bloques conceptuales; no es una consulta lista para todas las plataformas.
+
+En cada base, el denominador del control es el número de artículos conocidos que están indexados y cumplen los límites allí. Recuperarlos todos no demuestra exhaustividad. Registra por qué falta cada uno y evita ajustar solo a sus palabras. Publica la consulta íntegra sin «…»: la cadena abreviada de Hou es ilustrativa, no reproducible.
+
+```{figure} ../../_static/generated/diagrams/es/snowballing_es.svg
+:name: fig-snowballing-es
+:alt: Búsqueda por citas e iteraciones. Las flechas son pasos de descubrimiento, no la dirección de las citas. Ejemplo conceptual independiente del dataset. Elaboración propia, CC BY 4.0.
+:width: 100%
+:align: center
+
+Búsqueda por citas e iteraciones. Las flechas son pasos de descubrimiento, no la dirección de las citas. Ejemplo conceptual independiente del dataset. Elaboración propia, CC BY 4.0.
 ```

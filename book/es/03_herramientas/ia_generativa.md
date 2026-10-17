@@ -8,7 +8,7 @@ La IA generativa ya forma parte del flujo de muchas revisiones, pero la evidenci
 | --- | --- | --- |
 | Planificación | Afinar preguntas, proponer sinónimos y términos, revisar el protocolo con PRISMA-P | Nada especialmente arriesgado si revisas lo que propone |
 | Búsqueda | Generar variantes de cadena y traducirlas entre bases (Polyglot); búsqueda preliminar en Elicit o Undermind | Pedir referencias a un chatbot: [Chelli et al. (2024)](https://www.jmir.org/2024/1/e53164) midieron tasas de referencias inventadas del 28,6 % en GPT-4 y del 39,6 % en GPT-3.5 (91,4 % en Bard), con solo un 16 a 20 % de DOI correctos |
-| Cribado por título y resumen | Como segundo revisor o prefiltro con regla "sensible": [Tran et al. (2024)](https://rti.org/publication/sensitivity-specificity-using-gpt-3-5-turbo-models-title-abstract-screening-systematic-reviews-meta) obtienen sensibilidad del 94,6 al 99,8 % perdiendo 0 o 1 de 26 estudios, a costa de una especificidad del 2 al 47 % | Como revisor único: [Guo et al. (2024)](https://www.jmir.org/2024/1/e48996) sobre 24.307 registros obtienen sensibilidad para incluidos de 0,76 (0,59 a 1,0 según revisión). En ingeniería del software, [Felizardo et al. (ESEM 2024)](https://conf.researchr.org/details/esem-2024/esem-2024-technical-track/2/ChatGPT-application-in-Systematic-Literature-Reviews-in-Software-Engineering-an-eval) obtienen un 75 y un 86 % de aciertos con GPT-4 en dos SLR y concluyen que no es aconsejable externalizar la selección; [Thode et al. (IST 2025)](https://www.fortiss.org/ergebnisse/publikationen/details/exploring-the-use-of-llms-for-the-selection-phase-in-systematic-literature-studies) alcanzan un *recall* del 98 al 99 % combinando dos modelos, con una precisión del 27 % |
+| Cribado por título y resumen | Como apoyo automatizado al cribado con regla "sensible": [Tran et al. (2024)](https://rti.org/publication/sensitivity-specificity-using-gpt-3-5-turbo-models-title-abstract-screening-systematic-reviews-meta) obtienen sensibilidad del 94,6 al 99,8 % perdiendo 0 o 1 de 26 estudios, a costa de una especificidad del 2 al 47 % | Como revisor único: [Guo et al. (2024)](https://www.jmir.org/2024/1/e48996) sobre 24.307 registros obtienen sensibilidad para incluidos de 0,76 (0,59 a 1,0 según revisión). En ingeniería del software, [Felizardo et al. (ESEM 2024)](https://conf.researchr.org/details/esem-2024/esem-2024-technical-track/2/ChatGPT-application-in-Systematic-Literature-Reviews-in-Software-Engineering-an-eval) obtienen un 75 y un 86 % de aciertos con GPT-4 en dos SLR y concluyen que no es aconsejable externalizar la selección; [Thode et al. (IST 2025)](https://www.fortiss.org/ergebnisse/publikationen/details/exploring-the-use-of-llms-for-the-selection-phase-in-systematic-literature-studies) alcanzan un *recall* del 98 al 99 % combinando dos modelos, con una precisión del 27 % |
 | Cribado a texto completo | Prometedor con prompts bien diseñados ([Khraisha et al., 2024](https://arxiv.org/abs/2310.17526)) | Dependiente del prompt y de la versión del modelo; resultados no estables |
 | Extracción de datos | Borrador de la ficha a partir del PDF (Elicit, Covidence, LLM con el PDF) que un humano verifica campo a campo | Fiabilidad "moderada" tras ajustar por azar (Khraisha et al.); números y tablas se transcriben mal con frecuencia |
 | Síntesis y redacción | Resumir tus propias notas, pulir el inglés, proponer estructura | Redactar hallazgos sin haber leído los estudios; inventar citas |
@@ -17,12 +17,14 @@ Patrón común de todos los estudios: la sensibilidad alta solo se consigue acep
 
 ## Protocolo de uso responsable
 
-1. **Decide en el protocolo** qué tareas hará la IA, con qué modelo y versión, y cómo la validarás. Añadirlo después es una desviación del protocolo.
-2. **Valida en una muestra**: compara las decisiones del modelo con las de dos humanos en 100 a 200 registros y reporta sensibilidad, especificidad y kappa. Si la sensibilidad no supera el 95 %, no lo uses para excluir.
-3. **Nunca dejes que la IA excluya sola**: úsala como segundo revisor (desacuerdos a un humano) o para ordenar la lectura.
-4. **Guarda los prompts exactos, la fecha y la versión** y publícalos como material suplementario junto con el código.
-5. **No subas texto con derechos o datos personales** a servicios que no garanticen privacidad; muchas universidades exigen anonimizar y usar cuentas institucionales.
-6. **Decláralo** en el artículo (ver abajo) y en el diagrama de flujo si la IA intervino en el cribado.
+1. Define tareas, modelo, versión, prompts, parámetros y supervisión antes de su uso; documenta los cambios.
+2. Construye un conjunto de referencia evaluado por dos personas y resuelto por consenso. Justifica su tamaño y composición: debe incluir suficientes estudios relevantes, casos dudosos y distintos tipos de documento. Separa el ajuste del prompt de la validación final.
+3. Informa verdaderos y falsos positivos y negativos, sensibilidad, especificidad, precisión e intervalos de confianza. **Ni 100–200 registros ni una sensibilidad puntual del 95 % garantizan seguridad.** Si solo hay cinco relevantes y se recuperan todos, la evidencia sobre sensibilidad sigue siendo muy imprecisa.
+4. Usa el modelo para priorizar o proponer decisiones; un humano verifica las exclusiones y resuelve desacuerdos. Un LLM no cuenta como segundo revisor humano independiente. Audita también el acuerdo humano–IA, que puede compartir errores.
+5. Conserva entradas, salidas, versiones, fechas y decisiones finales; verifica cada dato extraído contra su página de origen. Revalida tras cambios importantes del modelo, prompt o corpus.
+6. Respeta licencias y condiciones de tratamiento de los documentos; utiliza las opciones institucionales adecuadas. Declara el uso en Métodos, los materiales y el flujo de selección cuando corresponda.
+
+Una regla de parada basada solo en 50–100 irrelevantes consecutivos no demuestra que se haya recuperado toda la evidencia. El protocolo debe justificar el riesgo de omisiones y el procedimiento de comprobación.
 
 ## Guías y estándares
 
@@ -40,10 +42,22 @@ Patrón común de todos los estudios: la sensibilidad alta solo se consigue acep
 | [ACM](https://www.acm.org/publications/policies/new-acm-policy-on-authorship) (CSUR, TOCE) | La IA no puede ser autora; divulgar el uso generativo, normalmente en agradecimientos; correctores y traducción exentos |
 | [Springer Nature](https://link.springer.com/brands/springer/journal-policies) | Semáforo: pulido de lenguaje (verde), uso evaluativo o redacción (ámbar: verificar y declarar), autoría de IA o citas fabricadas (rojo) |
 
-En todas ellas los revisores tienen prohibido subir manuscritos a herramientas públicas. En España, el Ministerio anunció en abril de 2026 un Real Decreto, negociado con CRUE, que obligará a cada universidad a tener un código ético de uso de IA; mientras llega, la presentación de García-Peñalvo (GRIAL, [Zenodo, 2024](https://zenodo.org/records/12208155)) basada en las *Living Guidelines* de la Comisión Europea es la referencia más cercana en la USAL: no prohibir, exigir transparencia y trazabilidad, y gestionar autoría y alucinaciones.
+En todas ellas los revisores tienen prohibido subir manuscritos a herramientas públicas. Consulta también el código de integridad y las condiciones de uso de IA de tu universidad; documenta las reglas aplicables en la fecha del trabajo.
+
+
+Estas políticas son orientativas y cambian: verifica las instrucciones vigentes de la revista al enviar, y registra fuente y fecha. Los porcentajes de validación de la tabla corresponden a los modelos y datasets históricos citados, no al rendimiento actual de cualquier LLM.
 
 ## Ejemplo de párrafo de declaración
 
 ```
 Durante el cribado por título y resumen se utilizó GPT-4o (OpenAI, versión 2026-05, vía API) como segundo revisor, con el prompt reproducido en el material suplementario S3. En una muestra de 200 registros cribados de forma independiente por dos autores, el modelo alcanzó una sensibilidad de 0,97 y una especificidad de 0,61 (κ = 0,48). Los desacuerdos entre el modelo y el primer revisor (n = 143) fueron resueltos por el segundo autor. La IA no intervino en la extracción ni en la síntesis. Para el pulido lingüístico del manuscrito se usó DeepL Write; los autores revisaron y son responsables de todo el contenido.
+```
+
+```{figure} ../../_static/generated/diagrams/es/human_ai_es.svg
+:name: fig-human_ai-es
+:alt: Colaboración humano–IA con decisión humana y auditoría. Una propuesta automatizada no sustituye la revisión humana independiente. Elaboración propia, CC BY 4.0.
+:width: 100%
+:align: center
+
+Colaboración humano–IA con decisión humana y auditoría. Una propuesta automatizada no sustituye la revisión humana independiente. Elaboración propia, CC BY 4.0.
 ```

@@ -1,0 +1,20 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", fontsize=17];
+node [shape=box, style="rounded,filled", fillcolor="#edf5fa", color="#277b9b", fontcolor="#163247", fontname="Arial", fontsize=17, margin="0.18,0.12"];
+edge [color="#526e80", fontname="Arial", fontsize=13, arrowsize=0.7];
+A [label="Question and objective\nOutput: RQ and scope"];
+B [label="Reviewed protocol\nMethods and amendment log"];
+C [label="Validated search\nQueries, dates and exports"];
+D [label="Selection\nDecisions and PRISMA flow"];
+E [label="Critical appraisal and extraction\nJudgements and page-linked data"];
+F [label="Synthesis by question\nTables, figures and conclusion"];
+G [label="Reporting and updates\nChecklist and open materials"];
+A -> B;
+B -> C;
+C -> D;
+D -> E;
+E -> F;
+F -> G;
+C -> B [label="Pilot: document amendments", style=dashed];
+E -> B [label="Clarify criteria", style=dashed];
+}

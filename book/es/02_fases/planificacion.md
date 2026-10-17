@@ -1,6 +1,17 @@
 # Fase 1. Planificación: de la idea al protocolo
 
-La planificación termina con un protocolo escrito y revisado por alguien que no sea tú. Todo lo que decidas después de ver los resultados introduce sesgo, así que el protocolo debe fijar preguntas, criterios, fuentes, cadenas de búsqueda, ficha de extracción y criterios de calidad antes de lanzar la primera consulta.
+La planificación termina con un protocolo escrito y revisado por alguien que no sea tú. Define preguntas, criterios, fuentes, estrategia de búsqueda, extracción y evaluación crítica antes de la búsqueda definitiva. Las búsquedas exploratorias y los pilotajes permiten afinar el protocolo. Un cambio posterior puede ser necesario: registra fecha, motivo, fase y efecto, y distingue decisiones previas de decisiones informadas por los resultados.
+
+
+```{figure} ../../_static/generated/diagrams/es/traceability_es.svg
+:name: fig-traceability-es
+:alt: De RQ1 a la conclusión en el ejercicio ficticio. Cada decisión debe rastrearse hasta su origen. Elaboración propia, CC BY 4.0.
+:width: 100%
+:align: center
+
+De RQ1 a la conclusión en el ejercicio ficticio. Cada decisión debe rastrearse hasta su origen. Elaboración propia, CC BY 4.0.
+```
+
 
 ## Paso 0. ¿Hace falta esta revisión?
 
@@ -44,12 +55,12 @@ Pide a tu director o a un colega que revise el protocolo antes de ejecutarlo. Ki
 
 ## Paso 4. Registrar o publicar el protocolo
 
-Registrar el protocolo antes de empezar demuestra que no cambiaste las reglas al ver los resultados, y PRISMA 2020 y SEGRESS piden indicar dónde está. Opciones:
+Registrar el protocolo antes de la ejecución mejora la transparencia y permite contrastar el plan con lo realizado; no garantiza por sí solo ausencia de sesgo. PRISMA 2020 pide informar del registro y del acceso al protocolo, o indicar que no existen. Un depósito público y un registro prospectivo no son equivalentes. Opciones:
 
 - [PROSPERO](https://www.crd.york.ac.uk/prospero/) (Universidad de York, gratuito): solo acepta revisiones con resultados relevantes para la salud humana; no sirve para la mayoría de SLR de informática o educación, y excluye scoping reviews. Relanzado en marzo de 2025 con publicación automática tras la aprobación de los autores.
 - [OSF Registries](https://help.osf.io/hc/en-us/articles/360019738794-Select-a-Registration-Template) (gratuito, con DOI, cualquier disciplina): la opción más usada fuera de salud; tiene plantilla "Generalized Systematic Review" válida para SLR, scoping y meta-análisis.
-- [INPLASY](https://inplasy.com/) (unos 21 USD, DOI en menos de 48 h; más de 9.800 protocolos) y [Research Registry](https://www.researchregistry.com/) (de pago): aceptan cualquier campo.
-- Depósito abierto en [Zenodo](https://zenodo.org/), Figshare o arXiv: práctica habitual en ingeniería del software, que da DOI y fecha, aunque sin revisión.
+- [INPLASY](https://inplasy.com/) (consulta tarifas y condiciones vigentes) y [Research Registry](https://www.researchregistry.com/) (de pago): aceptan cualquier campo.
+- Depósito abierto en [Zenodo](https://zenodo.org/), Figshare o arXiv: práctica habitual en ingeniería del software, con identificador persistente y fecha, aunque sin revisión; Zenodo y Figshare permiten DOI, mientras que arXiv proporciona un identificador arXiv.
 
 Solo el 31,5 % de los 537 estudios secundarios de ingeniería del software publicados entre 2013 y 2023 comparten sus artefactos (protocolo, búsquedas, datos), y apenas el 12 % lo hace en un repositorio permanente ([Huotala, Kuutila & Mäntylä, 2025](https://arxiv.org/html/2504.12646v2)). Hacerlo bien te diferencia.
 

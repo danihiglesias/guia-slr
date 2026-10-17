@@ -1,6 +1,17 @@
 # Phase 1. Planning: from the idea to the protocol
 
-Planning ends with a written protocol that has been reviewed by someone other than you. Anything you decide after seeing the results introduces bias, so the protocol must fix the questions, criteria, sources, search strings, extraction form and quality criteria before you run the first query.
+Planning ends with a written protocol that has been reviewed by someone other than you. Define questions, criteria, sources, search strategy, extraction and critical appraisal before the definitive search. Exploratory searches and pilots can refine the protocol. Later amendments may be necessary: record their date, reason, stage and impact, and distinguish prospective decisions from those informed by results.
+
+
+```{figure} ../../_static/generated/diagrams/en/traceability_en.svg
+:name: fig-traceability-en
+:alt: From RQ1 to the conclusion in the fictional exercise. Each decision must be traceable to its source. Original figure, CC BY 4.0.
+:width: 100%
+:align: center
+
+From RQ1 to the conclusion in the fictional exercise. Each decision must be traceable to its source. Original figure, CC BY 4.0.
+```
+
 
 ## Step 0. Is this review needed?
 
@@ -44,12 +55,12 @@ Ask your supervisor or a colleague to review the protocol before you carry it ou
 
 ## Step 4. Registering or publishing the protocol
 
-Registering the protocol before you start shows that you did not change the rules after seeing the results, and PRISMA 2020 and SEGRESS ask you to state where it can be found. Options:
+Registering the protocol before execution improves transparency and allows comparison of planned and completed methods; it does not guarantee absence of bias. PRISMA 2020 asks authors to report registration and protocol access, or state that neither exists. Public deposit and prospective registration are not equivalent. Options:
 
 - [PROSPERO](https://www.crd.york.ac.uk/prospero/) (University of York, free): only accepts reviews with outcomes relevant to human health; it is not suitable for most SLRs in computer science or education, and it excludes scoping reviews. Relaunched in March 2025 with automatic publication after the authors' approval.
 - [OSF Registries](https://help.osf.io/hc/en-us/articles/360019738794-Select-a-Registration-Template) (free, with DOI, any discipline): the most widely used option outside health; it offers a "Generalized Systematic Review" template suitable for SLRs, scoping reviews and meta-analyses.
-- [INPLASY](https://inplasy.com/) (about USD 21, DOI in under 48 h; more than 9,800 protocols) and [Research Registry](https://www.researchregistry.com/) (paid): accept any field.
-- Open deposit in [Zenodo](https://zenodo.org/), Figshare or arXiv: common practice in software engineering, which provides a DOI and a date, although without review.
+- [INPLASY](https://inplasy.com/) (check current fees and conditions) and [Research Registry](https://www.researchregistry.com/) (paid): accept any field.
+- Open deposit in [Zenodo](https://zenodo.org/), Figshare or arXiv: common practice in software engineering, with a persistent identifier and date, although without review; Zenodo and Figshare support DOIs, whereas arXiv supplies an arXiv identifier.
 
 Only 31.5% of the 537 secondary studies in software engineering published between 2013 and 2023 share their artefacts (protocol, searches, data), and barely 12% do so in a permanent repository ([Huotala, Kuutila & Mäntylä, 2025](https://arxiv.org/html/2504.12646v2)). Doing it properly sets you apart.
 

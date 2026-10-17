@@ -16,7 +16,7 @@ Question: *In the field of surgery, what metrics exist to objectively assess a r
 
 ## 2. Quasi-gold standard set
 
-Before searching, identify by hand (or by asking an expert) a small set of papers that directly answer the question (Zhang, Babar & Tell, 2011, call it the *quasi-gold standard*). It will be used to extract keywords from their titles and abstracts and to validate the search string: a reasonable criterion is that the automated search should retrieve **at least 70%** of those papers; if not, the string is revised.
+Before searching, identify by hand (or by asking an expert) a small set of papers that directly answer the question (Zhang, Babar & Tell, 2011, call it the *quasi-gold standard*). It will be used to extract keywords from their titles and abstracts and to validate the search string: a reasonable criterion is that the automated search should retrieve all known relevant papers indexed in each source (the historical example’s 70% is not a general threshold) ; investigate each absence and revise the string where appropriate.
 
 ## 3. Sources and restrictions
 
@@ -48,8 +48,8 @@ Dybå & Dingsøyr (2008) checklist scored Yes = 1, Partially = 0.5, No = 0, plus
 
 - Register the protocol on OSF before launching the search and cite its DOI.
 - Document the search with the 16 PRISMA-S items and add backward and forward *snowballing* from the included studies.
-- Recruit a second reviewer for a 20% sample and report kappa, in addition to the *test-retest*.
-- If an LLM is used as a second reviewer, validate it on that same sample and declare it.
+- Plan independent human assessment, justify sampling and report disagreements before consensus.
+- If an LLM proposes decisions, validate it on an independent set and disclose it as automation.
 - Generate the diagram with the PRISMA 2020 app and complete the SEGRESS checklist before submitting.
 - Deposit the screening sheet, extraction sheet and search strings on Zenodo.
 
@@ -67,5 +67,32 @@ Dybå & Dingsøyr (2008) checklist scored Yes = 1, Partially = 0.5, No = 0, plus
 7. Synthesising paper by paper instead of by question.
 8. Submitting to a journal that no longer accepts reviews or whose format does not allow the necessary length.
 9. Using AI to screen or extract without validating or declaring it.
-10. Taking so long that the search becomes outdated; if more than 12 months pass, rerun the search before submitting.
+10. Taking so long that the search becomes outdated; assess updates against the field’s pace and submission date.
 ```
+
+## Complete reproducible exercise: fictional data
+
+This exercise complements the historical case. **Records, studies S01–S06, participants, passages, pages and judgements are invented for teaching. They are not scientific findings and do not reconstruct the original review.**
+
+**Protocol:** RQ1 asks which metrics are reported by population. Include residents or final-year students, a haptic/virtual simulator and at least one performance metric. EC1: wrong population; EC2: no metric. Fictional reviewers A/B use the same criteria; their agreement does not estimate expected agreement in an actual review. The three appraisal domains are illustrative, with no total score. No AI is used.
+
+**Selection:** Scopus contributes 24 records and IEEE Xplore 16. Eight duplicates are removed, 32 records screened and 22 excluded. Ten reports are sought: one unavailable and nine assessed. Two are excluded for EC1 and two for EC2. Five database reports and one citation-search report are included: six reports and six studies. The citation branch contains one report sought, retrieved and eligible. R28 is unavailable: log access/contact attempts in a real review; it is not a content-based exclusion.
+
+| Study | Population | Participants | Metrics (fictional page 2) |
+| --- | --- | --- | --- |
+| S01 | Resident | 24 | Time; errors |
+| S02 | Resident | 18 | Time |
+| S03 | Student | 30 | Errors; force |
+| S04 | Student | 16 | Time; force |
+| S05 | Resident | 22 | Errors |
+| S06 | Student | 20 | Time; errors; force |
+
+**Answer to RQ1:** time and errors each appear in four studies; force in three. All three student studies report force; two report time and two errors. Among residents, two report time and two errors. These are reporting frequencies, not effectiveness comparisons. Fast performance can include errors: no metric is shown to be superior and participants are not pooled as one sample.
+
+**Appraisal and interpretation:** S02 does not report missing-data handling; S04 does not report measurement validity; S05 insufficiently describes context. Other cells document the criterion. “Not reported” requires caution rather than proving faulty methods. Retain these limitations when grouping time as temporal efficiency and errors/force as execution safety.
+
+**Downloads:** {download}`Full screening log <../../_static/downloads/en/screening_example.csv>` · {download}`Extraction <../../_static/downloads/en/extraction_example.csv>` · {download}`Codebook <../../_static/downloads/en/codebook.csv>` · {download}`Counts <../../_static/downloads/en/flow_counts.json>` · {download}`Full package <../../_static/downloads/en/teaching_materials.zip>`.
+
+**Reproduction:** install `requirements-figures.txt` in `.venv` and run `scripts/generate_teaching_assets.py` from the repository root. It checks counts and plots downloadable extraction data. Then run `scripts/render_diagrams.py` for Graphviz sources. Column names and IDs remain in English for stability; values and figures are translated.
+
+**Check your understanding:** why do 11 metric occurrences not mean 11 studies? Why is R28 not added to the four exclusions? Categories overlap and R28 could never be assessed.

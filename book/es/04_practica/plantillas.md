@@ -36,7 +36,7 @@ Autores y roles: <revisor 1, revisor 2, árbitro>
 - Herramientas (gestor, cribado, aprendizaje activo, IA) y cómo se validan
 
 ## 6. Evaluación de la calidad / riesgo de sesgo
-- Instrumento, puntuación, umbral y uso (excluir / ponderar / describir)
+- Instrumento por diseño, dominios, justificaciones y uso en la síntesis; exclusiones y análisis de sensibilidad justificados
 
 ## 7. Extracción de datos
 - Formulario (campos, valores permitidos), pilotaje, validación
@@ -60,12 +60,12 @@ Autores y roles: <revisor 1, revisor 2, árbitro>
 | Identificación | ID (S01…), cita completa, DOI, año, sede, tipo (revista, congreso, capítulo), país de la primera afiliación, fuente de la que procede |
 | Diseño | Tipo de investigación (Wieringa: validación, evaluación, propuesta, filosófico, opinión, experiencia), método empírico (experimento, caso, encuesta, cuasi-experimento), contexto (académico, industrial), participantes y número |
 | Contenido | Un campo por pregunta de investigación, con valores cerrados cuando sea posible; tipo de contribución (método, herramienta, modelo, métrica, proceso) |
-| Calidad | Puntuación por criterio y total |
+| Calidad | Juicio por dominio, justificación, página y efecto en la síntesis |
 | Gestión | Revisor que extrae, fecha, notas, citas textuales relevantes con página |
 
 ## Hoja de cribado (una fila por registro)
 
-ID, fuente, título, año, duplicado (sí/no y de cuál), decisión fase 1 revisor A, decisión fase 1 revisor B, decisión final fase 1, decisión fase 2, criterio de exclusión aplicado, origen (búsqueda / snowballing / gris). Con estas columnas el diagrama PRISMA se calcula con filtros.
+ID de registro, ID de publicación, ID de estudio, fuente, título, año, texto recuperado (sí/no), duplicado (sí/no y de cuál), decisión fase 1 revisor A, decisión fase 1 revisor B, decisión final fase 1, decisión fase 2, criterio de exclusión aplicado, origen (búsqueda / snowballing / gris). Cuenta registros, publicaciones y estudios por separado; enlaza las múltiples publicaciones de un estudio. Registra también intentos de recuperación y motivos de texto no recuperado.
 
 ## Checklist de reporte abreviado (PRISMA 2020 + SEGRESS)
 
@@ -100,4 +100,14 @@ ID, fuente, título, año, duplicado (sí/no y de cuál), decisión fase 1 revis
 | Síntesis y figuras | 3 a 4 semanas | Tablas y figuras por pregunta |
 | Redacción, checklist y envío | 4 a 6 semanas | Manuscrito y material suplementario |
 
-Total: 6 a 9 meses a tiempo parcial. Si la búsqueda tiene más de 12 meses al enviar, repite la búsqueda y actualiza el diagrama.
+Total: 6 a 9 meses a tiempo parcial. Decide cuándo actualizar según la velocidad del campo y el tiempo desde la búsqueda; doce meses es una alerta orientativa, no un umbral universal.
+
+## Plantillas descargables
+
+- {download}`Protocolo editable <../../_static/downloads/es/protocol_template.md>`
+- {download}`Cribado vacío <../../_static/downloads/es/screening_template.csv>`
+- {download}`Extracción vacía <../../_static/downloads/es/extraction_template.csv>`
+- {download}`Registro de búsquedas <../../_static/downloads/es/search_log_template.csv>`
+- {download}`Registro de cambios <../../_static/downloads/es/amendments_template.csv>`
+- {download}`Checklist editable <../../_static/downloads/es/reporting_checklist.md>`
+- {download}`Todas las plantillas y el ejemplo <../../_static/downloads/es/teaching_materials.zip>`

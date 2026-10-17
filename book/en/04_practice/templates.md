@@ -36,7 +36,7 @@ Authors and roles: <reviewer 1, reviewer 2, arbiter>
 - Tools (reference manager, screening, active learning, AI) and how they are validated
 
 ## 6. Quality assessment / risk of bias
-- Instrument, scoring, threshold and use (exclude / weight / describe)
+- Tool by design, domains, rationales and use in synthesis; justified exclusions and sensitivity analyses
 
 ## 7. Data extraction
 - Form (fields, allowed values), piloting, validation
@@ -60,12 +60,12 @@ Authors and roles: <reviewer 1, reviewer 2, arbiter>
 | Identification | ID (S01…), full citation, DOI, year, venue, type (journal, conference, chapter), country of first affiliation, source it comes from |
 | Design | Research type (Wieringa: validation, evaluation, solution proposal, philosophical, opinion, experience), empirical method (experiment, case study, survey, quasi-experiment), context (academic, industrial), participants and number |
 | Content | One field per research question, with closed values where possible; contribution type (method, tool, model, metric, process) |
-| Quality | Score per criterion and total |
+| Quality | Domain judgement, rationale, page and effect on synthesis |
 | Management | Extracting reviewer, date, notes, relevant verbatim quotes with page |
 
 ## Screening sheet (one row per record)
 
-ID, source, title, year, duplicate (yes/no and of which), phase 1 decision reviewer A, phase 1 decision reviewer B, final phase 1 decision, phase 2 decision, exclusion criterion applied, origin (search / snowballing / grey). With these columns, the PRISMA diagram can be computed using filters.
+Record ID, report ID, study ID, source, title, year, report retrieved (yes/no), duplicate (yes/no and of which), phase 1 decision reviewer A, phase 1 decision reviewer B, final phase 1 decision, phase 2 decision, exclusion criterion applied, origin (search / snowballing / grey). Count records, reports and studies separately; link multiple reports of one study. Record retrieval attempts and reasons for unavailable reports too.
 
 ## Abridged reporting checklist (PRISMA 2020 + SEGRESS)
 
@@ -100,4 +100,14 @@ ID, source, title, year, duplicate (yes/no and of which), phase 1 decision revie
 | Synthesis and figures | 3 to 4 weeks | Tables and figures per question |
 | Writing, checklist and submission | 4 to 6 weeks | Manuscript and supplementary material |
 
-Total: 6 to 9 months part-time. If the search is more than 12 months old at submission, rerun the search and update the diagram.
+Total: 6 to 9 months part-time. Assess updates against the field’s pace and elapsed time; twelve months is an indicative warning, not a universal threshold.
+
+## Downloadable templates
+
+- {download}`Editable protocol <../../_static/downloads/en/protocol_template.md>`
+- {download}`Blank screening log <../../_static/downloads/en/screening_template.csv>`
+- {download}`Blank extraction form <../../_static/downloads/en/extraction_template.csv>`
+- {download}`Search log <../../_static/downloads/en/search_log_template.csv>`
+- {download}`Amendment log <../../_static/downloads/en/amendments_template.csv>`
+- {download}`Editable checklist <../../_static/downloads/en/reporting_checklist.md>`
+- {download}`All templates and worked example <../../_static/downloads/en/teaching_materials.zip>`

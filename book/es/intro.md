@@ -2,6 +2,17 @@
 
 Esta guía explica, paso a paso, cómo planificar, ejecutar y publicar una revisión sistemática de la literatura (SLR) o un mapeo sistemático en ingeniería e informática. Está pensada para doctorandos e investigadores que abordan su primera revisión.
 
+
+```{figure} ../_static/generated/diagrams/es/process_es.svg
+:name: fig-process-es
+:alt: Mapa del proceso y entregables. Las flechas discontinuas representan revisiones documentadas del protocolo. Elaboración propia, CC BY 4.0.
+:width: 100%
+:align: center
+
+Mapa del proceso y entregables. Las flechas discontinuas representan revisiones documentadas del protocolo. Elaboración propia, CC BY 4.0.
+```
+
+
 ## Cómo usar esta guía
 
 Si es tu primera SLR, lee los capítulos en orden. Si ya tienes un tema y necesitas empezar, ve directamente a las fases (planificación, búsqueda, selección, extracción y redacción) y usa las plantillas del final. Cada fase cierra con los errores más frecuentes que vemos en doctorandos. Los dos documentos que conviene tener siempre a mano son las guías de proceso de {cite:t}`kitchenham2007` y la declaración de reporte PRISMA 2020 de {cite:t}`page2021prisma`.
@@ -26,12 +37,15 @@ Si es tu primera SLR, lee los capítulos en orden. Si ya tienes un tema y necesi
 | Práctica | [Caso práctico guiado](04_practica/caso_practico.md) · [Plantillas y listas de control](04_practica/plantillas.md) |
 | Referencias | [Referencias y recursos](05_referencias/referencias.md) |
 
+````{only} html
 ## Versión PDF
 
 También puedes descargar la versión imprimible del libro:
 
 - [Descargar PDF](../_static/GuiaRevisionSistematicaLiteratura.pdf)
 
+````
+
 ```{note}
-Los precios, versiones e indicadores bibliométricos que aparecen en la guía se consultaron en octubre de 2026 y cambian con frecuencia; comprueba siempre la fuente original antes de decidir.
+Las herramientas y políticas cambian. Consulta las fuentes oficiales y registra fecha, versión y condiciones. Revisión metodológica y visual: 16 de octubre de 2026.
 ```

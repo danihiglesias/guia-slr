@@ -37,3 +37,11 @@ Cada `push` a `main` lanza el workflow `deploy-book` (GitHub Actions), que gener
 ## Plantilla y licencia
 
 Construido con la [plantilla TeachBook USAL](https://github.com/elloza/teachbook_usal_template) de Álvaro Lozano Murciego y André Filipe Sales Mendes (Jupyter Book / TeachBooks). Contenido bajo licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+## Figuras y materiales docentes reproducibles
+
+Las 11 figuras por idioma tienen fuentes editables en `diagram_sources/es/` y `diagram_sources/en/`, con imágenes estáticas en `book/_static/generated/diagrams/`. Los datos del ejercicio son ficticios y se identifican como tales.
+
+Con Python 3.12 del entorno `.venv`, instala opcionalmente `requirements-figures.txt` y ejecuta `scripts/generate_teaching_assets.py` para regenerar los datos y los gráficos. Después ejecuta `scripts/render_diagrams.py` para renderizar las fuentes Graphviz. Las imágenes ya están incluidas: compilar o leer el libro no requiere conexión con Kroki.
+
+Las plantillas y ejemplos descargables están en `book/_static/downloads/es/` y `book/_static/downloads/en/`. Los identificadores y nombres de columnas son estables en inglés; los valores de extracción y las figuras están traducidos. Las figuras originales y los datos docentes siguen la licencia CC BY 4.0; el flujo PRISMA está identificado como adaptación.

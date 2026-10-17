@@ -1,6 +1,6 @@
 # Bibliography
 
-The complete references of the guide, grouped by type (methodological guidelines, reporting and registration, AI in reviews, readings in Spanish), are in the [References and resources](05_references/references.md) chapter. This page collects the entries cited with BibTeX throughout the book.
+This is the unified book bibliography, generated from one BibTeX database. The resources chapter groups readings by topic and links their sources.
 
 ```{bibliography}
 :cited:
