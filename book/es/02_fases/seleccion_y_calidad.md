@@ -29,7 +29,7 @@ Criterios genéricos habituales: fecha (justificada: la aparición de una tecnol
 4. **Cribar a texto completo**, registrando el motivo de exclusión de cada artículo descartado (PRISMA exige listarlos con sus razones).
 5. **Añadir los artículos del *snowballing*** y repetir el cribado sobre ellos hasta que no aparezcan nuevos.
 
-El número de fases depende del volumen de candidatos y del número de revisores. Las tasas de exclusión varían mucho: estima el esfuerzo mediante un pilotaje de tu propio corpus.500 registros a 1.700 tras duplicados, a unos 50 tras título y resumen, y a unos 13 tras texto completo; planifica el tiempo en consecuencia. Antes de cribar en serio, calibra: los revisores cribarán de forma independiente una muestra de 50 a 100 registros, compararán sus decisiones y afinarán la interpretación de los criterios.
+El número de fases depende del volumen de candidatos y del número de revisores. Las tasas de exclusión varían mucho: estima el esfuerzo mediante un pilotaje de tu propio corpus. Antes de cribar en serio, calibra: los revisores cribarán de forma independiente una muestra de 50 a 100 registros, compararán sus decisiones y afinarán la interpretación de los criterios.
 
 ## Acuerdo entre revisores
 
